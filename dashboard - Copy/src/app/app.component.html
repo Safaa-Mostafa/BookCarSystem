@@ -1,0 +1,13 @@
+<app-header   (menuClicked)="sidenav.toggle()" ></app-header>
+<mat-sidenav-container class="color" >
+  <mat-sidenav mode="side" #sidenav opened class="mat-elevation-z6 side-color" >
+<app-sidenav ></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+<router-outlet>
+</router-outlet>
+</mat-sidenav-content >
+</mat-sidenav-container>
+
+
+
